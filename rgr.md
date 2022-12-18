@@ -1,3 +1,9 @@
+---
+layout: page
+---
+
+# Rich-get-Richer Mechanism
+
 In this section we analyze the distributions of significant parameters to assess actor success and impact on movies and we give a possible explanation for such behaviors. It is indeed interesting to qualitatively understand why actors' success can be influenced by external factors and not only by the quality of the actors' work. We observed that distribution of actors' careers number of movie appearances is shown below. It is interesting to notice that it follows a power law, given that is linear in the logarithmic domain. Moreover, the typical exponential tail in the semilogarithmic y domain is visually observable.
 
 <p align="center">
