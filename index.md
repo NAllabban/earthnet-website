@@ -2,40 +2,6 @@
 layout: page
 ---
 
-# Introduction
-
-Have you ever watched a movie because an actor was starring in it? Good actors lead to good movies. The star system has started in Hollywood in the 1920s with the goal of exploiting the image of actors to promote movies and generate publicity. The project, based on the movies released in the US, aims at investigating the factors that make an actor successful. Successful actors are able to make a living out of their acting career, and even if this seems normal for any other job, in the movie industry, a huge part of the actors' population are 'one-hit wonders', actors that starred only once and did not manage to make their career take off. A minority of the actors, instead, detains most of the assigned jobs, generating a natural power law in actors' movie appearances. How do these different categories of actors impact the ratings of the movies they star in? An observational study is carried out, in order to understand and limit the confounders affecting this mechanism of joining the 'richer' circle.
-
-<p align="center">
-    <img width="1000" alt="correlation" src="https://user-images.githubusercontent.com/114060781/207631217-99ba4a55-7714-4eeb-8f3b-e13edc9c183d.png">
-
-    
-### Research questions
-#### Do successful actors impact movie ratings?
-* What define the success of an actor?
-* Which are the possible confounders to be tackled in assessing the characteristics of successful actors?
-* How are movie ratings and successful actors related between each other?
-* Are there any gender biases in the job assignment in the movie industry?
-* How are networks of actors formed and how does their degree relate to movie ratings?# Rich-get-Richer Mechanism
-In this section we analyze the distributions of significant parameters to assess actor success and impact on movies and we give a possible explanation for such behaviors. It is indeed interesting to qualitatively understand why actors' success can be influenced by external factors and not only by the quality of the actors' work. We observed that distribution of actors' careers number of movie appearances is shown below. It is interesting to notice that it follows a power law, given that is linear in the logarithmic domain. Moreover, the typical exponential tail in the semilogarithmic y domain is visually observable.
-
-<p align="center">
-    <img width="1000" alt="correlation" src="https://user-images.githubusercontent.com/114060781/208259952-6f8f75e7-de37-418e-923b-6594a3d87134.png">
-
-To statistically prove that the distribution follows a power law we perform a Kolmogorov-Smirnov test on the tail of the distribution. The results are here shown. Given the p-values larger than 0.05 we cannot reject the null hypothesis that the distribution is exponential.
-   
-| Dataset   | KS test  | p-value |
-| --------- | -------- | ------- |
-| Overall   | 0.32     | 0.11    |
-| Actors    | 0.33     | 0.09    |
-| Actresses | 0.30     | 0.17    |
-
-An explanation for the onset of a power law can be given. Just as normal distributions arise from many independent random decisions averaging out, power laws can arise from the feedback introduced by correlated decisions across a population [1]. Successful actors keep starring with other successful actors, making them even more successful and naturally generating a power law in actors' productivity, namely the number of appearances in movies. This mechanism makes it difficult to quantify the impact of actors on movies, because of the large amount of possible confounders that influence the probability of an actor joining this 'rich-get-richer' loop.
-
-    
-
-[1] D. Easley and J. Kleinberg, Networks, Crowds, and Markets: Reasoning about a Highly Connected World, Cambridge University Press, 2010.
- # Observational Study
 
 To understand the merit of an actor in joining the rich-get-richer circle and its impact on the movie rating, we carry out an observational study to limit the effect of the confounders. Actors are matched through propensity score matching, namely their probability of being part of the treatment group, based on observed covariates. The treatment group is defined by the most successful actors, while the control group by the rest of the actors' population. According to the Pareto principle, the threshold between the number of appearances that dominate and the long tail of the power law distribution is defined by the 80/20 rule. Basically, 20% of the people detain the most number of appearances. Therefore, the splitting of the dataset will be carried out based on the 80th percentile of the distribution, more representative than the mean or the median when considering skewed distributions. To make the study more recent and to take into account movies where the ratings has a significant number of votes, we decided to only consider actors born after 1930. The used dataset involves 50869 actors and 86116 movies of released in the US.
 
