@@ -22,4 +22,4 @@ An explanation for the onset of a power law can be given. Just as normal distrib
     
 
 [1] D. Easley and J. Kleinberg, Networks, Crowds, and Markets: Reasoning about a Highly Connected World, Cambridge University Press, 2010.
- # Observational Study
+
