@@ -3,5 +3,9 @@ title: The Star System
 description: An ivestigation of actor's impact on movie ratings
 show_downloads: True
 navigation:
-  - title: Project
-    url: index
+  - title: Introduction
+    url: introduction
+  - title: Rich-get-Richer Mechanism
+    url: rgr
+  - title: Observational Study
+    url: observational_study
