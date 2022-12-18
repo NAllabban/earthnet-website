@@ -1,9 +1,11 @@
 theme: jekyll-theme-minimal
-title: ADA Template Website
+title: The Star System
 description: A template website for ADA
 show_downloads: True
 navigation:
   - title: Home
-    url: /
+    url: README
   - title: Example
     url: example
+  - title: Observational study
+    url: observational_study
