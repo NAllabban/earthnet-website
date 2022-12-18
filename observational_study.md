@@ -82,7 +82,6 @@ To clarify, Animation genre refers to movies where actors give their voice to ch
 <p align="center">
     <img width="1000" alt="correlation" src="https://user-images.githubusercontent.com/114060781/208291037-84372ff8-5eb0-4277-9733-98f3e4d0437c.png">
     
-
-<iframe src=" https://gabf13.github.io/ada-website/plots/pie.html"> </iframe>
-
-   
+    
+    
+<iframe src="plots/pie.html" height="750" width="100%" style="border:none;" scrolling="no"> </iframe>
