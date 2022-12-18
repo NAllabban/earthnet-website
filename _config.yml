@@ -1,11 +1,7 @@
 theme: jekyll-theme-minimal
 title: The Star System
-description: A template website for ADA
+description: An ivestigation of actor's impact on movie ratings
 show_downloads: True
 navigation:
-  - title: Home
-    url: README
-  - title: Example
-    url: example
-  - title: Observational study
-    url: observational_study
+  - title: Project
+    url: index
