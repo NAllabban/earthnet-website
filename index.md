@@ -1,9 +1,5 @@
 ---
 layout: page
-title: The Star System
-order: 1
-aside:
-  toc: true
 ---
 
 # Introduction
