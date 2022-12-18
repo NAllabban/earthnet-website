@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 
 # Rich-get-Richer Mechanism
