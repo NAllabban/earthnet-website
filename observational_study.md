@@ -22,7 +22,6 @@ To further balance the dataset, a perfect matching is done on gender. An example
 
 | actor               |   propensity_score | 
 |:--------------------|:-------------------|
-    
 | Frank_Farrington    |           0.90474  |
 | Jade_Pettyjohn      |       0.915799     | 
 |Pat_Harmon           |           0.443002 |
