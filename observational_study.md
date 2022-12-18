@@ -21,6 +21,7 @@ Multiple factors can influence the job assigment in the movie industry. The foll
 To further balance the dataset, a perfect matching is done on gender. An example of the resulting propensity scores is displayed below.
 
 | actor               |   propensity_score |
+    
 |:--------------------|:-------------------|
 | Frank_Farrington    |           0.90474  |
 | Jade_Pettyjohn      |       0.915799     | 
