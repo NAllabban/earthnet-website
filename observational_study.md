@@ -21,7 +21,7 @@ Multiple factors can influence the job assigment in the movie industry. The foll
 To further balance the dataset, a perfect matching is done on gender. An example of the resulting propensity scores is displayed below.
 
 | actor               |   propensity_score |
-|:--------------------|-------------------:|
+|:--------------------|:-------------------|
 | Frank_Farrington    |           0.90474  |
 | Jade_Pettyjohn      |       0.915799     | 
 |Pat_Harmon           |           0.443002 |
@@ -36,7 +36,7 @@ The balanced dataset contains 12066 actors.
 
 
 
-### Gender biases
+# Gender biases
 Tthe gender bias seems to play a systematic role in the assigment of movies to actors, because of the difference in movie appearances and average ratings, visible from the bar plots (with 95% confidence intervals). However, by performing a Mann-Whitney U test between two distributions before and after the matching, it is observed that the difference in distributions by gender passes from being significantly different to being non significant, given the changes in p-values. This means that the majority of of the people in the control group were actresses and got discarded in the matching process, due to its larger size, so that the probability of joining the 'rich-get-richer' circle is not gender biased. We are aware that not all the possible confounders have been tackled in the present study, but this change in p-values shows an interesting trend. It is worth mentioning that the percentage of actresses in the original dataset and in the balanced one are almost the same, 0.42 and 0.39 respectively, making it a meaningful comparison in terms of size.
 
 The label *is_post* in the legend indicates if the data refer to the dataset post treatment or not.
